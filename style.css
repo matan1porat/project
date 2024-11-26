@@ -1,0 +1,540 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body{
+    background-color: whitesmoke;
+    margin: 0px;
+    padding: 0px;
+    height: fit-content;
+}
+main{
+    display: flex;
+    margin-top: 6rem;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 1.5vh;
+    column-gap: 2.9vh;
+    padding: 2vh;
+}
+
+footer{
+    background-color: grey;
+    width: 100%;
+    margin: 0 ;
+}
+
+h1 {
+    padding: 1rem;
+    margin: 0px;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-right: auto;
+}
+
+
+.navbar{
+    height: 60px;
+    width: 100%;
+    background-color: grey;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    
+}
+.p{
+    margin-right: auto;
+}
+.links-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.navbar a{
+    height: 100%;
+    color: black;
+    text-decoration: none;
+    padding: 0 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.navbar a:hover{
+    background-color: black;
+}
+.navbar i{
+    color: black;
+}
+#menu{
+    display: none;
+}
+.open-menu, .close-menu{
+    display: none;
+}
+
+@media (max-width:850px){
+    .links-container {
+        flex-direction: column;
+        align-items: flex-start;
+
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        width: 300px;
+
+        background-color: lightgray;
+
+        box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+        transition: 0.75s ease-out 0s;
+    }
+    
+    .navbar a{
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;
+    }
+
+    .open-menu, .close-menu{
+        display: block;
+        padding: 20px;
+
+    }
+    #menu:checked ~ .links-container{
+        right: 0;
+    }
+    #menu:checked ~ #overlay{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+}
+@media (max-width:800px){
+    main .recipe{
+        background-color: rgba(211, 211, 211, 0.479);
+        height: 20vh;
+        width: 30vh;
+        color: black;
+        cursor: pointer;
+        text-align: center;
+        box-shadow: rgba(148, 148, 148, 0.74) 0 10px 10px;
+        border-radius: 13px;
+    }
+    main{
+        justify-content: center;
+    }
+}
+
+
+
+.recipe{
+    background-color: rgba(211, 211, 211, 0.479);
+    height: 20vh;
+    width: 30vh;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: rgba(148, 148, 148, 0.74) 0 10px 10px;
+    border-radius: 13px;
+}
+
+.main a{
+    text-decoration: none;
+}
+
+
+
+.main h2{
+    width: 100%;
+    text-align: center;
+}
+
+.fa-facebook{
+    color: #1877F2	;
+}
+.fa-youtube{
+    color: #FF0000	;
+}
+.fa-twitter{
+    color: #1DA1F2;
+}
+.fa-tiktok{
+    color: black;
+}
+.fa-instegram{
+    color: black;
+}
+
+
+
+footer{
+    display: flex;
+    gap: 3rem;
+    margin-top: 6rem;
+}
+.name{
+    
+    width: 100%;
+    height: 66%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+main i{
+    font-size: 1.9vh;
+    padding: 1vh;
+}
+
+.name h3{
+    color: white;
+    padding: 1rem;
+    font-size: 2rem;
+    font-family: sans-serif;
+    justify-self: center;
+    text-shadow:
+    -1px -1px 0 #000,
+     0   -1px 0 #000,
+     1px -1px 0 #000,
+     1px  0   0 #000,
+     1px  1px 0 #000,
+     0    1px 0 #000,
+    -1px  1px 0 #000,
+    -1px  0   0 #000;
+}
+#padkapao{
+    background-image: url("img/Pad-Krapao.webp" );
+}
+#hasaboats{
+    background-image: url("img/hasaboats.webp" );
+}
+#focaccia-eyalshani{
+    background-image: url("img/focaccia.jpg" );
+}
+#quinoa-lital{
+    background-image: url("img/quinoa.jpeg" );
+}
+#greenful-ahuva{
+    background-image: url("img/greenful.jpg" );
+}
+#eggplantsalad{
+    background-image: url("img/eggplantsalad.jpg" );
+}
+#tomatosalad-dad{
+    background-image: url("img/tomatosalad.jpg" );
+}
+#tzimmes{
+    background-image: url("img/tzimmes.webp" );
+}
+#greenbeans{
+    background-image: url("img/greenbeans.jpg" );
+}
+#eggsalad{
+    background-image: url("img/eggsalad.jpg" );
+}
+#chickenbreastsalad-aharoni{
+    background-image: url("img/chickenbreastsalad.jpg" );
+}
+#chickensoup-dora{
+    background-image: url("img/chickensoup.jpg" );
+}
+#zucchiniandleekpie{
+    background-image: url("img/zucchiniandleekpie.jpg" );
+}
+#moroccancarrot{
+    background-image: url("img/moroccancarrot.jpg" );
+}
+#zaalouk{
+    background-image: url("img/zaalouk.jpeg" );
+}
+#artichoke{
+    background-image: url("img/artichoke.jpeg" );
+}
+#okra-mom{
+    background-image: url("img/okra.jpg" );
+}
+#mamaliga-dora{
+    background-image: url("img/mamaliga.jpeg" );
+}
+#peasoup-dora{
+    background-image: url("img/peasoup.jpeg" );
+}
+#gulashsoup{
+    background-image: url("img/gulashsoup.jpeg" );
+}
+#pumpkinsoup{
+    background-image: url("img/pumpkinsoup.jpeg" );
+}
+#fishballs-rachel{
+    background-image: url("img/fishballs.jpg" );
+}
+#spicyfish{
+    background-image: url("img/spicyfish.avif" );
+}
+#hraime-chen{
+    background-image: url("img/hraime.jpeg" );
+}
+#hraime-ahuva{
+    background-image: url("img/hraime2.jpeg" );
+}
+#fishballs-yudit-rachel{
+    background-image: url("img/fishballs2.jpg" );
+}
+#currychicken{
+    background-image: url("img/currychicken.jpeg" );
+}
+#greencurrychickenwitheggplant{
+    background-image: url("img/greencurry.jpeg" );
+}
+#meatpatties{
+    background-image: url("img/meatpatties.jpg" );
+}
+#friedpattiesdubilike{
+    background-image: url("img/friedpatties.jpg" );
+}
+#patties,#patties-michalsmother{
+    background-image: url("img/patties.jpg" );
+}
+#pattiesandpotato{
+    background-image: url("img/pattiesandpotato.jpg" );
+}
+#themalezit{
+    background-image: url("img/themalezit.jpeg" );
+}
+#gulash{
+    background-image: url("img/gulash.jpeg" );
+}
+#davidschicken{
+    background-image: url("img/davidschicken.jpeg" );
+}
+#pizzaiola{
+    background-image: url("img/pizzaiola.jpeg" );
+}
+#chickeninpeppers{
+    background-image: url("img/chickeninpeppers.jpeg" );
+}
+#stuffeddora{
+    background-image: url("img/stuffedpeppers.jpeg" );
+}
+#pattiesinsauce,#pattiesintomatosauce-dora{
+    background-image: url("img/pattiesinsauce.jpeg" );
+}
+#ragu-dad{
+    background-image: url("img/ragu.jpg" );
+}
+#tomatosauce-hedva{
+    background-image: url("img/tomatosauce.jpeg" );
+}
+#stuffedeggplants-albert{
+    background-image: url("img/stuffedeggplants.jpeg" );
+}
+#cookiespassover{
+    background-image: url("img/cookiespassover.jpeg" );
+}
+#honeycake-dora{
+    background-image: url("img/honeycake.jpeg" );
+}
+#laikahcakepassover-dora{
+    background-image: url("img/laikahcake.jpeg" );
+}
+#melai-dora{
+    background-image: url("img/melai.jpeg" );
+}
+#hamanears-mom{
+    background-image: url("img/hamanears.jpeg" );
+}
+#hamanears{
+    background-image: url("img/hamanears2.jpeg" );
+}
+#hamanears-dora{
+    background-image: url("img/hamanears3.jpeg" );
+}
+#haroset-dyedo{
+    background-image: url("img/haroset.jpeg" );
+}
+#germanbuns{
+    background-image: url("img/germanbuns.jpeg" );
+}
+#shaishcake-aharoni{
+    background-image: url("img/shaishcake.jpeg" );
+}
+#applecake-dora{
+    background-image: url("img/applecake.jpeg" );
+}
+#orangecake-dora{
+    background-image: url("img/orangecake.jpeg" );
+}
+#chocolatecake-mom{
+    background-image: url("img/chocolatecake.jpeg" );
+}
+#apricotcake-dora{
+    background-image: url("img/apricotcake.jpeg" );
+}
+#carrotcake{
+    background-image: url("img/carrotcake.jpeg" );
+}
+#romanianberrycake{
+    background-image: url("img/romanianberrycake.jpeg" );
+}
+#crumbcake-dora{
+    background-image: url("img/crumbcake.jpeg" );
+}
+#roll{
+    background-image: url("img/roll.jpeg" );
+}
+#cantuccini{
+    background-image: url("img/cantuccini.jpeg" );
+}
+#orange-aroma{
+    background-image: url("img/orangecake2.jpeg" );
+}
+#roll-orli{
+    background-image: url("img/roll2.jpeg" );
+}
+#puffs{
+    background-image: url("img/puffs.jpeg" );
+}
+#Kadaif-lital{
+    background-image: url("img/kadaif.jpeg" );
+}
+#cheesecake{
+    background-image: url("img/cheesecake.jpeg" );
+}
+#brownies-yael{
+    background-image: url("img/brownies.jpeg" );
+}
+#brownies{
+    background-image: url("img/brownies2.jpeg" );
+}
+#cheesy-mom{
+    background-image: url("img/cheesy.jpeg" );
+}
+#hala-ilanitbenshimon{
+    background-image: url("img/hala.jpeg" );
+}
+#pretzels{
+    background-image: url("img/pretzels.jpeg" );
+}
+#pretzelsjerusalem{
+    background-image: url("img/pretzels2.jpeg" );
+}
+#apricotcakedough{
+    background-image: url("img/apricotcake2.jpeg" );
+}
+#bananainfilodough{
+    background-image: url("img/bananafillo.jpeg" );
+}
+#shapedough-dora{
+    background-image: url("img/shapecookie.jpeg" );
+}
+#shapecookiesdough{
+    background-image: url("img/shapecookie2.jpeg" );
+}
+#buns-adiel{
+    background-image: url("img/buns.jpeg" );
+}
+#redscake{
+    background-image: url("img/redscake.jpeg" );
+}
+#garlicrice-dad{
+    background-image: url("img/garlicrice.jpeg" );
+}
+#greenparcirice{
+    background-image: url("img/persiangreenrice.jpeg" );
+}
+#mujadara-mom{
+    background-image: url("img/mujadara.jpeg" );
+}
+#rice-saba{
+    background-image: url("img/rice.jpeg" );
+}
+#cheesecake-shirleysmith{
+    background-image: url("img/cheesecake2.jpeg" );
+}
+#crumbcheesecake-hagit{
+    background-image: url("img/cheesecake3.jpeg" );
+}
+#jamcookies{
+    background-image: url("img/jamcookies.jpeg" );
+}
+#almondcookies-paz{
+    background-image: url("img/almondcookies.jpeg" );
+}
+#donuts-ilanit{
+    background-image: url("img/jamdonuts.jpeg" );
+}
+#machinecookies-karingoren{
+    background-image: url("img/machinecookies.jpeg" );
+}
+#shapecookies{
+    background-image: url("img/shapecookie3.jpeg" );
+}
+#shapecookies2{
+    background-image: url("img/shapecookie4.jpeg" );
+}
+#stickyrice-dubi{
+    background-image: url("img/stickyrice.jpeg" );
+}
+#stickytofi{
+    background-image: url("img/stickytofi.webp" );
+}
+#pannacotta-haimcohen{
+    background-image: url("img/penacotta.jpeg" );
+}
+#cremebrulee-pam{
+    background-image: url("img/cremebrulee.jpeg" );
+}
+#parfaithalva{
+    background-image: url("img/parfaithalva.jpeg" );
+}
+#tiramisu{
+    background-image: url("img/tiramisu.jpeg" );
+}
+#cat-yafaandsonya{
+    background-image: url("img/cat.jpeg" );
+}
+#chocolatemousse{
+    background-image: url("img/chocolatemousse.jpeg" );
+}
+#strawberrysorbet{
+    background-image: url("img/strawberrysorbet.jpeg" );
+}
+#malabi{
+    background-image: url("img/malabi.jpeg" );
+}
+#gulash2{
+    background-image: url("img/gulash2.jpeg" );
+}
+#currychicken-renana{
+    background-image: url("img/chickencurry.jpeg" );
+}
+#potroast-orlitzor{
+    background-image: url("img/potroast.jpeg" );
+}
+#stuffed-orlitzor{
+    background-image: url("img/stuffedpeppers2.jpeg" );
+}
+#pattiesandpotato-yonit{
+    background-image: url("img/pattiesandpotato2.jpg" );
+}
+#pastel{
+    background-image: url("img/pastel.jpeg" );
+}
+#cinnabon{
+    background-image: url("img/cinnabon.jpeg" );
+}
+#hazeret{
+    background-image: url("img/horseradish.jpeg" );
+}
+
+
