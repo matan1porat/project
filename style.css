@@ -33,6 +33,28 @@ h1 {
     font-style: normal;
     margin-right: auto;
 }
+.recipe-container{
+    display: block;
+    direction: rtl;
+}
+                                                                                
+.recipe-container-english{
+    display: block;
+}
+.recipe-container h2{
+    text-align: center;
+}
+.recipe-container .list {
+    margin: 10px 0 10px 0;
+}
+
+.recipe-container-english h2{
+    text-align: center;
+}
+.recipe-container-english .list {
+   
+    margin: 10px 0 10px 0;
+}
 
 
 .navbar{
@@ -65,9 +87,11 @@ h1 {
     text-align: center;
     display: flex;
     align-items: center;
+    font-family: "Lexend", serif;
+
 }
 .navbar a:hover{
-    background-color: black;
+    background-color: lightgray;
 }
 .navbar i{
     color: black;
@@ -535,6 +559,9 @@ main i{
 }
 #hazeret{
     background-image: url("img/horseradish.jpeg" );
+}
+#pancakes-fluffy{
+    background-image: url("img/pancakes.jpeg" );
 }
 
 
